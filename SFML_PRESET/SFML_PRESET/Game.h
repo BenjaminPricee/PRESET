@@ -1,29 +1,22 @@
-// Game class declaration
 #pragma once
 
 #include "SFML/Graphics.hpp" 
 #include <iostream>
-#include <cstdlib>  // include support for randomizing
-#include <ctime>   // supports ctime function
+#include <cstdlib>
+#include <ctime>
 
-#include "Globals.h"   // include Global header file
-
+#include "Globals.h"
 
 class Game
 {
-	// private data members
-
-	// put your game objects here eg player object and 
-	// array of enemy objects etc.
-
 	sf::RenderWindow window;
 
 public:
-	sf::Font m_font;  // font for writing text
-	sf::Text m_message;  // text to write on the screen
+	sf::Font m_font;
+	sf::Text m_message;
 
-public:	  // declaration of member functions	
-	Game(); // default constructor
+public:
+	Game();
 	void	loadContent();
 	void	run();
 	void	update();
