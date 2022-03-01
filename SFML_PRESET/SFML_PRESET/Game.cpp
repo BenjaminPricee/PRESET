@@ -22,15 +22,10 @@ Game::Game() : window(sf::VideoMode(static_cast<int>(SCREEN_WIDTH), static_cast<
 
 void Game::loadContent()
 {
-	if (!m_font.loadFromFile("ASSETS/FONTS/BebasNeue.otf"))
+	if (!font.loadFromFile("ASSETS/FONTS/BebasNeue.otf"))
 	{
 		std::cout << "error with font file file";
 	}
-
-	m_message.setFont(m_font);
-	m_message.setCharacterSize(24);
-	m_message.setFillColor(sf::Color::White);
-	m_message.setPosition(10, 10);
 
 }
 
@@ -87,7 +82,5 @@ void Game::draw()
 {
 	window.clear();
 
-	m_message.setString("Game Play");
-	window.draw(m_message);
 	window.display();
 }

@@ -12,11 +12,11 @@ class Game
 	sf::RenderWindow window;
 
 public:
-	sf::Font m_font;
-	sf::Text m_message;
+	sf::Font font;
 
 public:
-	Game();
+	Game(); 
+	// Basics //
 	void	loadContent();
 	void	run();
 	void	update();
